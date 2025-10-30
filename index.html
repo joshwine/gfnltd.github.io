@@ -78,6 +78,89 @@
         </div>
       </div>
     </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <p>Independent, senior attention on matters where clarity and execution quality determine outcomes.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Investment Strategy</h3>
+            <p class="dim">Frameworks and decision support for capital allocation across asset classes, including real estate and private market opportunities.</p>
+            <ul class="list">
+              <li>Opportunity screening and prioritisation</li>
+              <li>Market and jurisdictional comparisons</li>
+              <li>Risk, downside, and sensitivity analysis</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Projects & Transactions</h3>
+            <p class="dim">Assessment of project feasibility, business plans, partners, and execution roadmaps; support through key negotiations.</p>
+            <ul class="list">
+              <li>Commercial due diligence review</li>
+              <li>Partnership and JV structuring options</li>
+              <li>Milestones, governance, and decision gates</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Financing & Structure</h3>
+            <p class="dim">Evaluation of capital structure alternatives and financing sources to match investment objectives and constraints.</p>
+            <ul class="list">
+              <li>Debt and equity options assessment</li>
+              <li>Comparative term analysis</li>
+              <li>Funding process planning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="background" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Background</h2>
+          <p>GFN Ltd is led by <strong>Joshua Wine</strong>, former Partner at McKinsey &amp; Company, with over 25 years of experience as an executive and consultant for international institutions and investors on strategy, financing, and cross-border investment analysis. Joshua’s work combines rigorous analysis with practical execution, supporting clients from thesis to decision to delivery.</p>
+          <div class="kv"><span class="k">Approach</span><span>Selective engagements, senior attention throughout, and confidentiality by default.</span></div>
+          <div class="kv"><span class="k">Focus</span><span>Real assets and private markets; complex multi-jurisdiction projects.</span></div>
+          <div class="kv"><span class="k">Working model</span><span>Retainer-based or project-specific mandates, aligned to outcomes.</span></div>
+        </div>
+        <aside class="card">
+          <h3>At a glance</h3>
+          <p class="dim"><span class="tick"></span> Former Partner, McKinsey &amp; Company</p>
+          <p class="dim"><span class="tick"></span> 25+ years advising institutions &amp; investors</p>
+          <p class="dim"><span class="tick"></span> Strategy, financing, cross-border analysis</p>
+          <hr style="border:0;border-top:1px solid var(--line);margin:14px 0" />
+          <p class="dim">Selected geographies: United Kingdom, Switzerland, wider Europe.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="dim">To discuss a mandate or request a discreet introduction, please get in touch.</p>
+        <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+          <div>
+            <div class="kv"><span class="k">Email</span><a href="mailto:josh@gfn-consulting.com" style="color:var(--ink);text-decoration:none">josh@gfn-consulting.com</a></div>
+            <div class="kv"><span class="k">Registered office</span><span>GFN Ltd, 21 Engineer Lane, Gibraltar</span></div>
+            <div class="kv"><span class="k">Company No.</span><span class="mono">11807</span></div>
+          </div>
+          <form onsubmit="event.preventDefault();window.location.href='mailto:josh@gfn-consulting.com?subject=Enquiry%20via%20Website';" aria-label="Quick contact">
+            <label class="dim" for="msg">Message (optional)</label>
+            <textarea id="msg" rows="4" style="width:100%;margin-top:6px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:10px"></textarea>
+            <button class="btn primary" type="submit" style="margin-top:12px">Email GFN Ltd</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div class="dim">© <span id="y"></span> GFN Ltd. All rights reserved.</div>
+      <div class="dim">This site uses no cookies and collects no personal data.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
