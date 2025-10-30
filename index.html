@@ -7,9 +7,77 @@
   <meta name="description" content="GFN Ltd provides discreet, senior-level strategic and financial advisory for corporations." />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
+  <style>
+    :root {
+      --bg:#0f1115;
+      --panel:#151822;
+      --ink:#e8ecf3;
+      --muted:#a7b0c3;
+      --line:#232838;
+      --accent:#7aa2f7;
+      --accent-2:#89dceb;
+      --ok:#a6e3a1;
+    }
+    html,body {height:100%;margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial;background:var(--bg);color:var(--ink);}
+    .container {max-width:1100px;margin:0 auto;padding:0 20px;}
+    .nav {position:sticky;top:0;z-index:30;backdrop-filter:blur(10px);background:rgba(15,17,21,0.6);border-bottom:1px solid var(--line);}
+    .nav-inner {display:flex;align-items:center;justify-content:space-between;height:64px;}
+    .brand {display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--ink);}
+    .brand-mark {width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 8px 24px rgba(122,162,247,.25);}
+    .brand-name {font-weight:600;letter-spacing:.4px;}
+    .nav a {color:var(--muted);text-decoration:none;margin-left:22px;}
+    .nav a:hover {color:var(--ink);}
+    .hero {padding:110px 0 80px;border-bottom:1px solid var(--line);}
+    .eyebrow {color:var(--muted);text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;}
+    h1 {font-size:clamp(36px,5vw,56px);line-height:1.06;margin:.4rem 0 1rem;}
+    .lede {font-size:1.125rem;color:var(--muted);max-width:780px;}
+    .cta-row {margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;}
+    .btn {display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none;transition:all .2s ease;}
+    .btn:hover {border-color:var(--accent);box-shadow:0 10px 28px rgba(122,162,247,.15);}
+    .btn.primary {background:linear-gradient(135deg,rgba(122,162,247,.18),rgba(137,220,235,.18));border-color:transparent;}
+    .section {padding:72px 0;border-bottom:1px solid var(--line);}
+    .section h2 {font-size:clamp(24px,3.2vw,32px);margin:0 0 10px;}
+    .section p {color:var(--muted);}
+    .cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:24px;}
+    .card {background:linear-gradient(180deg,rgba(255,255,255,.015),rgba(255,255,255,.005));border:1px solid var(--line);border-radius:16px;padding:20px;}
+    .card h3 {margin:0 0 6px;font-size:1.05rem;}
+    .dim {color:var(--muted);font-size:.95rem;}
+    .list {margin:12px 0 0;padding-left:1.1rem;}
+    .two-col {display:grid;grid-template-columns:1.2fr .8fr;gap:28px;}
+    @media (max-width:900px){.two-col{grid-template-columns:1fr;}}
+    .kv {display:flex;gap:12px;align-items:flex-start;margin:12px 0;}
+    .kv .k {min-width:150px;color:var(--muted);}
+    .footer {padding:34px 0 60px;color:var(--muted);}
+    .mono {font-family:ui-monospace,Menlo,Monaco,Consolas,"Courier New",monospace;}
+    .tick {width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:8px;}
+  </style>
 </head>
 <body>
-  <h1>GFN Ltd — Strategic Advisory</h1>
-  <p>This placeholder confirms your site is live. Full content previously generated can replace this file.</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark"></span><span class="brand-name">GFN Ltd</span>
+      </a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Discreet Strategic Advisory</div>
+        <h1>Discreet, senior-level strategic and financial advice.</h1>
+        <p class="lede">GFN Ltd provides senior-level strategic and financial advice for organisations pursuing complex investments, projects, and financing decisions. Engagements are selective, outcome-focused, and confidential.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Start a conversation</a>
+          <a class="btn" href="#services">Explore services</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
